@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 20px 0px;
+        font-family: Arial;
+    }
+    main{
+        height: 300px;
+        display: grid;
+        align-items: center;
+    }
+
+    main img{
+    width: 200px;
+    height: 200px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+</style>
+</head>
+<body>
+    <center>
+        <h1>Rotating Circle</h1>
+        <main>
+        <div>
+            <img src="circle.png" alt="circle">
+        </div>
+        </main>
+    </center>
+</body>
+</html>
